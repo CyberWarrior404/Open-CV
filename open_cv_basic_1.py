@@ -1,0 +1,35 @@
+import cv2
+print(cv2.__version__)
+image1 = cv2.imread('watermelon man.jpeg')
+image2 = cv2.imread('what.jpeg')
+
+cv2.imshow('Watermelon Man', image1)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+cv2.imshow('What', image2)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+resize_image=cv2.resize(image1, (1000, 1000))
+cv2.imshow('Resized Watermelon Man', resize_image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+resize_image2=cv2.resize(image2, (1000, 1000))
+cv2.imshow('Resized What', resize_image2)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+gray_image=cv2.cvtColor(image1, cv2.COLOR_BGR2GRAY)
+cv2.imshow('Gray Watermelon Man', gray_image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+hsv_image=cv2.cvtColor(image1, cv2.COLOR_BGR2HSV)
+cv2.imshow('HSV Watermelon Man', hsv_image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+add_image=cv2.add(resize_image, resize_image2)
+cv2.imshow('Added Images', add_image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
