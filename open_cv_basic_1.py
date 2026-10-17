@@ -33,3 +33,18 @@ add_image=cv2.add(resize_image, resize_image2)
 cv2.imshow('Added Images', add_image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+substract_image=cv2.subtract(resize_image, resize_image2)
+cv2.imshow('Subtracted Images', substract_image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+multiply_image=cv2.multiply(resize_image, resize_image2)
+cv2.imshow('Multiplied Images', multiply_image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+divide_image=cv2.divide(resize_image, resize_image2)
+cv2.imshow('Divided Images', divide_image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
